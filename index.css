@@ -1,0 +1,318 @@
+body {
+    background-color: #bdd0a0;
+}
+
+#menu {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 0 100 100px rgba(20, 19, 19, 0.5);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#menu #title {
+    background-image: url("pics/text.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#menu #nameInput {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    outline: none;
+    text-align: center;
+    background-color: #47707c;
+    color: #eeeeee;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menu #nameInput::placeholder {
+    color: #D3C5E5;
+    opacity: 0.7;
+}
+
+#menu #choose_level {
+    background-color: #101823;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+
+#menu #choose_level h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #f0a500;
+}
+
+#menu button {
+    background-color: #00adb5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 173, 181, 0.3);
+    width: calc(50% - 10px);
+    margin: 10px 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#menu #description_button {
+    background-color: #3f72af;
+    width: 30%;
+}
+
+#menu #start_button {
+    background-color: #4caf50;
+    width: 60%;
+}
+
+#menu #levels_buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#menu #levels_buttons button {
+    width: 50%;
+}
+
+#description {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#description h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #00adb5;
+    padding-bottom: 10px;
+}
+
+#description p,
+#description br {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+#description #elements {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#description #elements td {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #333;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+#description #elements #kepek td img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#description #elements tr:nth-child(odd) {
+    background-color: #f3f4f6;
+}
+
+#description #elements tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#description #back {
+    display: block;
+    background-color: #3f72af;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px auto 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+#game_easy {
+    display: grid;
+    grid-template-columns: 0.1fr 2fr 1fr;
+    gap: 10px;
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: #2d2d3a;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+#jatekos {
+    background-color: #393e46;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    text-align: left;
+}
+
+#title img {
+    width: 140px;
+    height: 70px;
+    margin-bottom: 50px;
+}
+
+#name {
+    display: block;
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#win {
+    display: block;
+    font-weight: bold;
+    color: #9dff00;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#win2 {
+    display: block;
+    font-weight: bold;
+    color: #9dff00;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#time {
+    display: block;
+    font-weight: bold;
+    color: #4caf50;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+#game_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d3a;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#palya_konnyu {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#palya_konnyu td {
+    padding: 0;
+    border: 1px solid #444;
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+#palya_konnyu td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#palya_nehez {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#palya_nehez td {
+    padding: 0;
+    border: 1px solid #444;
+    aspect-ratio: 1 / 1;
+    height: auto;
+}
+
+#palya_nehez td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#choices {
+    background-color: #393e46;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#choices span img {
+    width: 120px;
+    height: 120px;
+}
+
+#game_hard[hidden] {
+    display: none;
+}
+
+#game_easy[hidden] {
+    display: none;
+}
+
+#game_hard {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #2d2d3a;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Vasutak</title>
+  </head>
+  <body>
+    <div id="menu">
+      <section id="title"></section>
+      <input
+        type="text"
+        id="nameInput"
+        maxlength="20"
+        placeholder="ADD MEG A NEVED!"
+      />
+      <section id="choose_level">
+        <h3>ÁLLÍTSD BE A NEHÉZSÉGET!</h3>
+        <section id="levels_buttons">
+          <button id="easy_button"><b>5 X 5</b><br />(KÖNNYŰ)</button>
+          <button id="hard_button"><b>7 X 7</b><br />(NEHÉZ)</button>
+        </section>
+      </section>
+      <button id="description_button">LEÍRÁS</button>
+      <button id="start_button">JÁTÉK INDÍTÁSA</button>
+    </div>
+
+    <div id="description" hidden>
+      <h1>A játék leírása</h1>
+      A játék különböző méretű négyzetrácsos hálón játszódhat,
+      <br />ahol a célunk az, hogy egy összefüggő körvasútvonalat alkossunk úgy,
+      <br />hogy minden olyan helyre eljusson a vonat, ahova lehetséges.
+      <br /><br />
+      A térképen több különböző típusú mező található, melyek a játék kezdetén
+      látszódnak a térképen:
+      <table id="elements">
+        <tr id="kepek">
+          <td><img src="pics/e.png" /></td>
+          <td><img src="pics/bf.png" /></td>
+          <td><img src="pics/mrd.png" /></td>
+          <td><img src="pics/o.png" /></td>
+        </tr>
+        <tr>
+          <td>Üres mező</td>
+          <td>Híd mező</td>
+          <td>Hegy mező</td>
+          <td>Oázis mező</td>
+        </tr>
+        <tr>
+          <td>
+            Ebben a cellában a vasútvonal a belépési irányon kívül maradék három
+            irányba tud haladni.
+          </td>
+          <td>
+            Ezen a mezőn a vasútvonalat csak a híd által megadott egyenes
+            írányban lehet megépíteni.
+          </td>
+          <td>
+            Ezeken a mezőkön a sziklák a cellának két szomszédos kijáratát
+            lezárják, így csak 90°-ban elfordulva lehet továbbhaladni.
+          </td>
+          <td>Erre a cellára nem lehet vasutat építeni.</td>
+        </tr>
+      </table>
+      <br /><br />
+      Mivel szeretnénk a vasúthálózat alapanyagán spórolni,
+      <br />így a vasúthálózat sehol nem keresztezheti önmagát, <br />sehol nem
+      ágazhat el, és nem haladhat át többször egy cellán!
+      <button id="back">VISSZA</button>
+    </div>
+
+    <div id="game_easy" hidden>
+      <section id="jatekos">
+        <span id="title"><img src="pics/text.png" /></span>
+        <br />
+        ÚTVONALTERVEZŐ:
+        <br /><span id="name">ÁKOS</span> <br />ELTELT IDŐ: <br /><span
+          id="time"
+        ></span>
+        <br /><br /><br /><span id="win"></span>
+      </section>
+
+      <section id="game_area">
+        <table id="palya_konnyu">
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="choices">
+        <span id="straight_rail"><img src="pics/lc.png" /></span>
+        <span id="bridge_rail"><img src="pics/rc.png" /></span>
+        <span id="curve_rail"><img src="pics/cc.png" /></span>
+      </section>
+    </div>
+
+    <div id="game_hard" hidden>
+      <section id="jatekos">
+        <span id="title"><img src="pics/text.png" /></span>
+        <br />
+        ÚTVONALTERVEZŐ:
+        <br /><span id="name">ÁKOS</span> <br />ELTELT IDŐ: <br /><span
+          id="time"
+          >0</span
+        >
+        <br /><span id="time"></span> <br /><br /><br /><span id="win2"></span>
+      </section>
+
+      <section id="game_area">
+        <table id="palya_nehez">
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+          <tr>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+            <td><img src="pics/e.png" /></td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="choices">
+        <span id="straight_rail"><img src="pics/lc.png" /></span>
+        <span id="bridge_rail"><img src="pics/rc.png" /></span>
+        <span id="curve_rail"><img src="pics/cc.png" /></span>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
