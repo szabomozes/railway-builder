@@ -1,5 +1,5 @@
 
-# 3. félév | Webprogramozás - 1. beadandó (2024/25/1)
+# 3. félév | Webprogramozás - JavaScript beadandó
 
 **Tantárgy:** Webprogramozás  
 **Félév:** 2024/25/1 (őszi félév)  
