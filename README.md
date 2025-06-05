@@ -1,19 +1,18 @@
 
 # 3. félév | Webprogramozás (1. beadandó) (2024/25/1)
 
-**Tantárgy:** Webprogramozás
-**Félév:** 2024/25/1 (első félév)
-**Előadó:** Dr. Horváth Győző
-**Gyakorlatvezető:** Consuegra-Sotolongo Gábor Luis
+**Tantárgy:** Webprogramozás  
+**Félév:** 2024/25/1 (őszi félév)  
+**Előadó:** Dr. Horváth Győző  
+**Gyakorlatvezető:** Consuegra-Sotolongo Gábor Luis  
+
 
 ---
 
-## Weboldal megtekintése
+## Játék megtekintése
 
-Az elkészült játék innen érhető el:
-👉 _(ide illeszd be majd a GitHub Pages linket, ha van)_
-
----
+Az elkészült játékot itt tudod megnézni:  
+👉 [https://szabomozes.github.io/railway-builder/](https://szabomozes.github.io/railway-builder/)
 
 ## Projekt leírása
 
