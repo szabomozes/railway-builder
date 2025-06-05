@@ -5,6 +5,7 @@
 **Félév:** 2024/25/1 (őszi félév)  
 **Előadó:** Dr. Horváth Győző  
 **Gyakorlatvezető:** Consuegra-Sotolongo Gábor Luis  
+📅 Készült: 2025. november
 
 
 ---
@@ -31,5 +32,17 @@ A játék célja egy körvasút létrehozása különböző nehézségű négyze
 - HTML
 - CSS
 - JavaScript 
+
+---
+
+# 🎥 Működés közben (részletek)
+
+## ▶️ Játék indítása
+![Image](https://github.com/user-attachments/assets/22807ad4-51ea-41bd-a342-6bcd1838bb33)
+
+---
+
+## 🚂 Játék közben
+![Image](https://github.com/user-attachments/assets/3c3be8bf-f714-4a75-9f84-e0d524be74a7)
 
 ---
